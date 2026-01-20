@@ -1,6 +1,6 @@
 import React from 'react'
 import useFetch from '../hooks/useFetch'
-import productsService from '../services/productsService'
+import {deleteProduct, productsService} from '../services/productsService'
 import ProductTable from '../components/ProductTable';
 
 const Products = () => {
@@ -19,9 +19,18 @@ const Products = () => {
     )
   }
 
+  const handleDelete = async(id) => {
+    try {
+      await deleteProduct(id);
+      refetch();
+    } catch (error) {
+      alert(error.message)
+    }
+  }
+
   return (
     <div>
-      <ProductTable products={products}/>
+      <ProductTable products={products} onDelete={handleDelete}/>
     </div>
   )
 }

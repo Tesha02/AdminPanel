@@ -7,6 +7,15 @@ const productsService = async() => {
 
     return resp.json();
 
-}
+};
 
-export default productsService
+const deleteProduct = async(id) => {
+  const resp=await fetch("http://localhost:3001/products/" + id, {method:"DELETE"})
+  if(!resp.ok) {
+    throw new Error("Greska pri brisanju");
+  }
+
+  return true;
+};
+
+export { productsService, deleteProduct };
