@@ -1,0 +1,24 @@
+{
+  "products": [
+    { "id": 1, "name": "Lampica LED", "price": 1200, "category": "Rasveta", "inStock": true },
+    { "id": 2, "name": "Kutija za kablove", "price": 450, "category": "Rasveta", "inStock": true },
+    { "id": 3, "name": "Stolna lampa", "price": 3500, "category": "Rasveta", "inStock": false },
+    
+    { "id": 4, "name": "Kutija za odeću", "price": 8000, "category": "Namestaj", "inStock": true },
+    { "id": 5, "name": "Sofa 3-sed", "price": 45000, "category": "Namestaj", "inStock": false },
+    { "id": 6, "name": "Krevet queen", "price": 28000, "category": "Namestaj", "inStock": true },
+    { "id": 7, "name": "Stol za trpezariju", "price": 12500, "category": "Namestaj", "inStock": true },
+    
+    { "id": 8, "name": "Frižider 300L", "price": 42000, "category": "Kuhinja", "inStock": true },
+    { "id": 9, "name": "Šporet gas", "price": 18500, "category": "Kuhinja", "inStock": false },
+    { "id": 10, "name": "Mikser", "price": 3200, "category": "Kuhinja", "inStock": true },
+    
+    { "id": 11, "name": "TV 55\"", "price": 65000, "category": "Elektronika", "inStock": true },
+    { "id": 12, "name": "Soundbar", "price": 14500, "category": "Elektronika", "inStock": true },
+    { "id": 13, "name": "Laptop i5", "price": 95000, "category": "Elektronika", "inStock": false },
+    
+    { "id": 14, "name": "Mašina za veš 7kg", "price": 38500, "category": "Bela tehnika", "inStock": true },
+    { "id": 15, "name": "Uskmjerivač", "price": 2500, "category": "Bela tehnika", "inStock": true },
+    { "id": 16, "name": "Klima 12k BTU", "price": 72000, "category": "Bela tehnika", "inStock": false }
+  ]
+}
