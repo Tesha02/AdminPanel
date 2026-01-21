@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const ProductForm = ({initialValues, createPr}) => {
+const ProductForm = ({initialValues, Fn}) => {
   const [form,setForm] = useState(initialValues)
   const [errors,setErrors] = useState({
     name: "",
@@ -43,7 +43,7 @@ const ProductForm = ({initialValues, createPr}) => {
       category: form.category,
       inStock: form.inStock
     } 
-    await createPr(p);
+    await Fn(p);
   }
 
   return (

@@ -1,11 +1,11 @@
 {
   "products": [
     {
-      "id": "1",
       "name": "Lampica LED",
-      "price": 1200,
+      "price": "1250",
       "category": "Rasveta",
-      "inStock": true
+      "inStock": true,
+      "id": "1"
     },
     {
       "id": "2",
@@ -99,10 +99,10 @@
       "inStock": true
     },
     {
-      "id": "948c",
-      "name": "asd",
-      "price": "22",
-      "category": "asd",
+      "id": "aba6",
+      "name": "asdas",
+      "price": "2221",
+      "category": "Stolarija",
       "inStock": true
     }
   ]

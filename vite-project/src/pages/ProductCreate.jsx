@@ -26,7 +26,7 @@ const ProductCreate = () => {
 
   return (
     <div>
-      <ProductForm initialValues={initialV} createPr={handleCreate}/>
+      <ProductForm initialValues={initialV} Fn={handleCreate}/>
     </div>
   )
 }

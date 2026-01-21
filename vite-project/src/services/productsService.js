@@ -40,4 +40,18 @@ const getProductById = async(id) => {
   return resp.json();
 }
 
-export { productsService, deleteProduct, createProduct, getProductById };
+const updateProduct = async(id,formData) => {
+  const resp=await fetch("http://localhost:3001/products/"+id, {
+    method: "PUT",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(formData)
+  })
+
+  if(!resp.ok) {
+    throw new Error("Greska pri menjanju proizvoda");
+  }
+
+  return resp.json();
+}
+
+export { productsService, deleteProduct, createProduct, getProductById, updateProduct};
