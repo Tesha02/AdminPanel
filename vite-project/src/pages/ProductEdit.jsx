@@ -1,6 +1,8 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
-const ProductEdit = () => {
+const ProductEdit = ({product}) => {
+  const id=Number(useParams().id);
   return (
     <div>
       

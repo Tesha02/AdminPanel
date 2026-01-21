@@ -32,4 +32,12 @@ const createProduct = async(product) => {
   return resp.json();
 }
 
-export { productsService, deleteProduct, createProduct };
+const getProductById = async(id) => {
+  const resp=await fetch("http://localhost:3001/products/"+id);
+  if(!resp.ok) {
+    throw new Error("Greska pri ucitavanju proizvoda");
+  }
+  return resp.json();
+}
+
+export { productsService, deleteProduct, createProduct, getProductById };
