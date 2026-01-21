@@ -18,4 +18,18 @@ const deleteProduct = async(id) => {
   return true;
 };
 
-export { productsService, deleteProduct };
+const createProduct = async(product) => {
+  const resp=await fetch("http://localhost:3001/products", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(product)
+  })
+
+  if(!resp.ok) {
+    throw new Error("Greska pri kreiranju proizvoda");
+  }
+
+  return resp.json();
+}
+
+export { productsService, deleteProduct, createProduct };

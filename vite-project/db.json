@@ -92,10 +92,17 @@
       "inStock": false
     },
     {
-      "id": "14",
-      "name": "Mašina za veš 7kg",
-      "price": 38500,
-      "category": "Bela tehnika",
+      "id": "162d",
+      "name": "Sto",
+      "price": "15",
+      "category": "Stolarija",
+      "inStock": true
+    },
+    {
+      "id": "948c",
+      "name": "asd",
+      "price": "22",
+      "category": "asd",
       "inStock": true
     }
   ]
